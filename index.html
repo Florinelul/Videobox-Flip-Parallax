@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formate Speciale Pro TV</title>
+  <style>
+    html,body{margin:0;height:100%;background:#000}
+    .wrap{max-width:1120px;margin:0 auto;padding:40px 18px 80px;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    .title{font-weight:700;font-size:clamp(28px,4.8vw,56px);text-align:center;margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;background:#0d0d0d;border-radius:12px;padding:24px 18px;border:1px solid rgba(255,255,255,0.08)}
+    .embed{background:#000;border-radius:10px;overflow:hidden;aspect-ratio:300/600;height:auto}
+    @supports not (aspect-ratio: 1/1){ .embed{height:600px} }
+    iframe{width:100%;height:100%;border:0;display:block;background:#000}
+    .badges span{display:inline-block;background:#00e5ff;color:#001014;font-weight:700;text-transform:uppercase;border-radius:8px;font-size:12px;padding:6px 10px;margin:6px 8px 10px 0}
+    .spec h4{color:#cfefff;margin:14px 0 6px 0}
+    .spec ul{margin:6px 0 14px 18px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1 class="title">Formate Speciale Pro TV</h1>
+
+    <section class="grid">
+      <!-- PREVIEW stânga: iframe către embed-ul din același repo -->
+      <div class="embed">
+        <!-- Dacă embed-ul este în același folder (root), păstrează calea relativă: -->
+        <iframe src="vbx-parallax-v3.html"
+                title="Videoboxi la dreapta -->
+      <div>
+        <h3 style="font-weight:700;font-size:clamp(20px,2.4vw,30px);margin:0 0 10px">Videobox Flip Parallax</h3>
+        <div class="badges">
+          <span>Specifications</span><span>Video</span>
+          <span>Flip Parallax (Both Images)</span><span>Text</span><span>Button</span>
+        </div>
+        <div class="spec">
+          <h4>Specifications</h4>
+
+          <h4>Video</h4>
+          <ul>
+            <li><strong>Resolution:</strong> Full HD</li>
+            <li><strong>Weight:</strong> Up to 4 MB</li>
+            <li><strong>Ratio:</strong> 16:9</li>
+            <li><strong>Length:</strong> Up to 120 seconds</li>
+          </ul>
+
+          <h4>Flip Parallax (Both Images)</h4>
+          <ul>
+            <li><strong>Width:</strong> 300px</li>
+            <li><strong>Height:</strong> 431px</li>
+            <li><strong>Weight:</strong> Up to 150 KB</li>
+            <li><strong>Format:</strong> JPG/PNG</li>
+          </ul>
+
+          <h4>Text</h4>
+          <ul><li>Custom text, font, color, position &amp; size can be adjusted due to the design.</li></ul>
+
+          <h4>Button</h4>
+          <ul><li>Custom text, font, color, position &amp; size can be adjusted due to the design.</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
